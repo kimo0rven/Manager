@@ -1,0 +1,7 @@
+{
+  "name": "Manager",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

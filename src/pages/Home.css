@@ -1,0 +1,20 @@
+.md body {
+    --ion-background-color: #23272A !important;
+}
+.circle-background {
+    background: rgba(6, 106, 183, 0.342);
+    /* border-radius: 16px; */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(247, 247, 248, 0.411);
+    width: 320px; 
+    height: 320px;
+    border-radius: 50%;
+    display: flex; /* or inline-flex */
+    align-items: center; 
+    justify-content: center;
+    margin-top: -230px !important;
+    z-index: -2;
+    position: relative;
+  }

@@ -1,0 +1,67 @@
+.main {
+  justify-items: center;
+  position: absolute;
+  padding-top: 15px;
+  margin-top: 10px;
+}
+.card-design {
+  background: #2C2F33 !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+/* .container {
+  z-index: 20;
+  margin-top: -100px;
+} */
+/* .container p {
+  font-size: 25px;
+  line-height: 22px;
+  color: #f6f6f6;
+} */
+.container a {
+  text-decoration: none;
+}
+.circle {
+  background: rgba(88, 101, 242, .2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(0, 21, 247, 0.411);
+  width: 220px; 
+  height: 220px;
+  border-radius: 50%;
+  display: flex; /* or inline-flex */
+  align-items: center; 
+  justify-content: center;
+}
+.my-custom-interface .select-interface-option {
+  --color: #971e49;
+  --color-hover: #79193b;
+}
+
+/* Action Sheet Interface: set color for the action sheet using its button CSS variables */
+.my-custom-interface .select-interface-option {
+  --button-color-hover: #404EED;
+  font-size: 16px;
+  background: #23272a;
+}
+.list-md {
+background: rgba(0, 0, 0, 0) !important;
+}
+
+ion-select {
+  background-color: rgba(0, 0, 0, 0);
+  margin-right: 40%;
+}
+ion-select::part(text) {
+  color: #f6f6f6;
+  text-align: right;
+}
+ion-select::part(icon) {
+  color: #f6f6f6;
+  opacity: 1;
+}

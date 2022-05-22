@@ -1,0 +1,18 @@
+.circle-categ {
+  background: rgb(88, 101, 242);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid rgba(0, 21, 247, 0.411);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex; /* or inline-flex */
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-size {
+  font-size: 100px;
+}

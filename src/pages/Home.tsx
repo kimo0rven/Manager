@@ -1,22 +1,36 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+} from "@ionic/react";
+import Index from "../components/Index";
+import "./Home.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
 
 const Home: React.FC = () => {
+  const customActionSheetOptions = {
+    header: "Select to switch account",
+    translucent: true,
+    cssClass: "my-custom-interface",
+  };
   return (
     <IonPage>
-      <IonHeader>
+      {/* <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+            <IonTitle>Manager</IonTitle>
         </IonToolbar>
-      </IonHeader>
+      </IonHeader> */}
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
+        {/* <div className="d-table m-auto circle-background"></div> */}
+        {/* <IonHeader collapse="condense">
           <IonToolbar>
             <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        </IonHeader> */}
+        <Index />
       </IonContent>
     </IonPage>
   );

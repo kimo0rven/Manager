@@ -1,23 +1,21 @@
-.md body {
-  --ion-background-color: #23272a !important;
-}
-.circle-background {
-  background: rgba(6, 106, 183, 0.342);
+.circle-income {
+  background: rgba(35, 39, 42, 0.342);
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3.7px);
   -webkit-backdrop-filter: blur(3.7px);
   border: 1px solid rgba(247, 247, 248, 0.411);
-  width: 320px;
-  height: 320px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   display: flex; /* or inline-flex */
   align-items: center;
   justify-content: center;
-  margin-top: -230px !important;
-  z-index: -2;
-  position: relative;
 }
-.list-md {
-  padding: 0 !important;
+.income {
+  --padding-bottom: 100px;
+}
+
+IonModal {
+  --max-height: 100px;
 }

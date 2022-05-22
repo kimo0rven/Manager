@@ -22,20 +22,28 @@ const Index: React.FC<ContainerProps> = () => {
   return (
     <div className="container">
       <IonList className="fs-2">
-          <IonSelect
+        <IonSelect
           interface="action-sheet"
           interfaceOptions={customActionSheetOptions}
-          onIonChange={(e)=> setAccount(e.detail.value)}
-          value={account}>
-            <IonSelectOption value="total">Total</IonSelectOption>
-            <IonSelectOption value="wallet">Wallet</IonSelectOption>
-            <IonSelectOption value="gcash">Gcash</IonSelectOption>
-            <IonSelectOption value="bank">Bank</IonSelectOption>
-          </IonSelect>
-        </IonList>
-      {account === "total" ? (<Wallet />) : account === "wallet" ? (<Total />) : account === "gcash" ? (<Gcash />) : (<Bank />)}
+          onIonChange={(e) => setAccount(e.detail.value)}
+          value={account}
+        >
+          <IonSelectOption value="total">Total</IonSelectOption>
+          <IonSelectOption value="wallet">Wallet</IonSelectOption>
+          <IonSelectOption value="gcash">Gcash</IonSelectOption>
+          <IonSelectOption value="bank">Bank</IonSelectOption>
+        </IonSelect>
+      </IonList>
+      {account === "total" ? (
+        <Wallet />
+      ) : account === "wallet" ? (
+        <Total />
+      ) : account === "gcash" ? (
+        <Gcash />
+      ) : (
+        <Bank />
+      )}
     </div>
-      
   );
 };
 

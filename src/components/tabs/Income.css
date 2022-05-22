@@ -5,13 +5,17 @@
   backdrop-filter: blur(3.7px);
   -webkit-backdrop-filter: blur(3.7px);
   border: 1px solid rgba(247, 247, 248, 0.411);
-  width: 200px; 
+  width: 200px;
   height: 200px;
   border-radius: 50%;
   display: flex; /* or inline-flex */
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 .income {
   --padding-bottom: 100px;
+}
+
+IonModal {
+  --max-height: 100px;
 }

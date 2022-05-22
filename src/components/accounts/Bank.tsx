@@ -1,6 +1,7 @@
 import "../tabs/Expenses.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { IonLabel, IonSegmentButton, IonSegment, IonIcon } from "@ionic/react";
+import { IonLabel, IonSegmentButton, IonSegment } from "@ionic/react";
+
 import Expenses from "../tabs/Expenses";
 import Income from "../tabs/Income";
 
@@ -12,11 +13,10 @@ const Bank: React.FC<ContainerProps> = () => {
   const [tab, setTab] = useState("expenses");
 
   return (
-    
     <>
       <p className="text-center fs-1 my-0">₱400</p>
       <div className="d-flex justify-content-around">
-      <IonSegment value={tab} color='tertiary'>
+        <IonSegment value={tab} color="tertiary">
           <IonSegmentButton value="expenses" onClick={() => setTab("expenses")}>
             <IonLabel className="text-uppercase">Expenses</IonLabel>
           </IonSegmentButton>

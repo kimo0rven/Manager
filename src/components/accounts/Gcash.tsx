@@ -1,6 +1,5 @@
 import "../tabs/Expenses.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { AiOutlinePlus } from "react-icons/ai";
 import { IonLabel, IonSegmentButton, IonSegment } from "@ionic/react";
 import Expenses from "../tabs/Expenses";
 import Income from "../tabs/Income";
@@ -16,7 +15,7 @@ const Gcash: React.FC<ContainerProps> = () => {
     <>
       <p className="text-center fs-1 my-0">₱3000</p>
       <div className="d-flex justify-content-around">
-        <IonSegment value={tab} color='tertiary'>
+        <IonSegment value={tab} color="tertiary">
           <IonSegmentButton value="expenses" onClick={() => setTab("expenses")}>
             <IonLabel className="text-uppercase">Expenses</IonLabel>
           </IonSegmentButton>
